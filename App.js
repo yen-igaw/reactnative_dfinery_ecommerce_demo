@@ -26,7 +26,7 @@ import { StatusBar } from "expo-status-bar";
 import LocalNotication from "./src/components/Notification/LocalNotification";
 
 // Analytics
-import Adbrix from './src/Adbrix';
+
 
 const rootReducer = combineReducers({
   store: productReducer,
@@ -89,7 +89,6 @@ export default function App() {
   }
   return (
     <Provider store={store}>
-      <Adbrix />
       <StatusBar />     
       <AppNavigator />
     </Provider>

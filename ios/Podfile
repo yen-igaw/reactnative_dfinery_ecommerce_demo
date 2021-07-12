@@ -19,8 +19,6 @@ target 'DfineryEcommerceDemo' do
   #   end
   # end
 
-  pod 'HelloXCFramework_Yen', :git => "https://github.com/yen-igaw/HelloXCFramework.git"
-
   # Match all lib with target's setting
   post_install do |installer|
     installer.pods_project.targets.each do |target|

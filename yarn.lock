@@ -6550,22 +6550,17 @@
   "resolved" "https://registry.npmjs.org/react-link/-/react-link-1.0.3.tgz"
   "version" "1.0.3"
 
+"react-native-adbrix-remaster-preview@^2.0.4":
+  "integrity" "sha512-dY47t5PpYupWb6eGQt4XJbQN4O7cU1cp8oaq77TgpA9oJpt0phusqGMJZFvbD7fk3kWGrCOYiShSnLgU1Y7lSQ=="
+  "resolved" "https://registry.npmjs.org/react-native-adbrix-remaster-preview/-/react-native-adbrix-remaster-preview-2.0.4.tgz"
+  "version" "2.0.4"
+
 "react-native-animatable@^1.3.3":
   "integrity" "sha512-2ckIxZQAsvWn25Ho+DK3d1mXIgj7tITkrS4pYDvx96WyOttSvzzFeQnM2od0+FUMzILbdHDsDEqZvnz1DYNQ1w=="
   "resolved" "https://registry.npmjs.org/react-native-animatable/-/react-native-animatable-1.3.3.tgz"
   "version" "1.3.3"
   dependencies:
     "prop-types" "^15.7.2"
-
-"react-native-appmetrica@^2.0.0":
-  "integrity" "sha512-WYr8yRbWrRxtIy05mKJ5KAEI5nBInlSOzuy6lTswh/9VP9wY1AiOOv8iVQ6hCXe7ax+GIyVpLU5xmvGgyZASow=="
-  "resolved" "https://registry.npmjs.org/react-native-appmetrica/-/react-native-appmetrica-2.0.0.tgz"
-  "version" "2.0.0"
-
-"react-native-appsflyer@^6.3.20":
-  "integrity" "sha512-fwGvYNpiDV+aZ3XzkASYNuArFWf+8M5M0gR2+aS6/LcoKLfFBGdvKQJbj0Yop4v0vfvISsS5wGEEokjYmRmQWg=="
-  "resolved" "https://registry.npmjs.org/react-native-appsflyer/-/react-native-appsflyer-6.3.20.tgz"
-  "version" "6.3.20"
 
 "react-native-flip-card@^3.4.1":
   "integrity" "sha512-lqsjl4vF5DyHD7mjBJpyBoaLKVxalzoKfCosE63QF+TaCF9MKdJrxmGFQj/i64GDiMJqeS/5sNDcICUXtgFsVA=="
@@ -6720,7 +6715,7 @@
     "prop-types" "^15.6.0"
     "react-timer-mixin" "^0.13.4"
 
-"react-native@*", "react-native@^0.60.6 || ^0.61.5 || ^0.62.2 || ^0.63.2 || ^0.64.0 || 1000.0.0", "react-native@> 0.50.0", "react-native@>=0.42.0", "react-native@>=0.46", "react-native@>=0.57", "react-native@>=0.59.0 <1.0.x", "react-native@>=0.62.0-rc.0 <0.64.0", "react-native@~0.63.4":
+"react-native@*", "react-native@^0.60.6 || ^0.61.5 || ^0.62.2 || ^0.63.2 || ^0.64.0 || 1000.0.0", "react-native@> 0.50.0", "react-native@>=0.42.0", "react-native@>=0.46", "react-native@>=0.57", "react-native@>=0.62.0-rc.0 <0.64.0", "react-native@~0.63.4":
   "integrity" "sha512-I4kM8kYO2mWEYUFITMcpRulcy4/jd+j9T6PbIzR0FuMcz/xwd+JwHoLPa1HmCesvR1RDOw9o4D+OFLwuXXfmGw=="
   "resolved" "https://registry.npmjs.org/react-native/-/react-native-0.63.4.tgz"
   "version" "0.63.4"

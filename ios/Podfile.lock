@@ -1,7 +1,5 @@
 PODS:
-  - AppsFlyerFramework (6.3.2):
-    - AppsFlyerFramework/Main (= 6.3.2)
-  - AppsFlyerFramework/Main (6.3.2)
+  - AdBrixRemastered_XC (1.0.0)
   - boost-for-react-native (1.63.0)
   - DoubleConversion (1.1.6)
   - EXApplication (3.1.2):
@@ -72,7 +70,6 @@ PODS:
     - DoubleConversion
     - glog
   - glog (0.3.5)
-  - HelloXCFramework_Yen (0.0.5)
   - lottie-ios (3.1.9)
   - lottie-react-native (3.5.0):
     - lottie-ios (~> 3.1.8)
@@ -243,11 +240,8 @@ PODS:
     - React-cxxreact (= 0.63.4)
     - React-jsi (= 0.63.4)
   - React-jsinspector (0.63.4)
-  - react-native-appmetrica (2.0.0):
-    - React
-    - YandexMobileMetrica (= 3.9.4)
-  - react-native-appsflyer (6.3.20):
-    - AppsFlyerFramework (= 6.3.2)
+  - react-native-adbrix-remaster-preview (2.0.4):
+    - AdBrixRemastered_XC (= 1.0.0)
     - React
   - react-native-safe-area-context (3.2.0):
     - React-Core
@@ -345,14 +339,6 @@ PODS:
     - UMCore
   - UMTaskManagerInterface (6.1.0):
     - UMCore
-  - YandexMobileMetrica (3.9.4):
-    - YandexMobileMetrica/Static (= 3.9.4)
-  - YandexMobileMetrica/Static (3.9.4):
-    - YandexMobileMetrica/Static/Core (= 3.9.4)
-    - YandexMobileMetrica/Static/Crashes (= 3.9.4)
-  - YandexMobileMetrica/Static/Core (3.9.4)
-  - YandexMobileMetrica/Static/Crashes (3.9.4):
-    - YandexMobileMetrica/Static/Core
   - Yoga (1.14.0)
 
 DEPENDENCIES:
@@ -379,7 +365,6 @@ DEPENDENCIES:
   - FBReactNativeSpec (from `../node_modules/react-native/Libraries/FBReactNativeSpec`)
   - Folly (from `../node_modules/react-native/third-party-podspecs/Folly.podspec`)
   - glog (from `../node_modules/react-native/third-party-podspecs/glog.podspec`)
-  - HelloXCFramework_Yen (from `https://github.com/yen-igaw/HelloXCFramework.git`)
   - lottie-react-native (from `../node_modules/lottie-react-native`)
   - RCTRequired (from `../node_modules/react-native/Libraries/RCTRequired`)
   - RCTTypeSafety (from `../node_modules/react-native/Libraries/TypeSafety`)
@@ -393,8 +378,7 @@ DEPENDENCIES:
   - React-jsi (from `../node_modules/react-native/ReactCommon/jsi`)
   - React-jsiexecutor (from `../node_modules/react-native/ReactCommon/jsiexecutor`)
   - React-jsinspector (from `../node_modules/react-native/ReactCommon/jsinspector`)
-  - react-native-appmetrica (from `../node_modules/react-native-appmetrica`)
-  - react-native-appsflyer (from `../node_modules/react-native-appsflyer`)
+  - react-native-adbrix-remaster-preview (from `../node_modules/react-native-adbrix-remaster-preview`)
   - react-native-safe-area-context (from `../node_modules/react-native-safe-area-context`)
   - React-RCTActionSheet (from `../node_modules/react-native/Libraries/ActionSheetIOS`)
   - React-RCTAnimation (from `../node_modules/react-native/Libraries/NativeAnimation`)
@@ -429,10 +413,9 @@ DEPENDENCIES:
 
 SPEC REPOS:
   trunk:
-    - AppsFlyerFramework
+    - AdBrixRemastered_XC
     - boost-for-react-native
     - lottie-ios
-    - YandexMobileMetrica
 
 EXTERNAL SOURCES:
   DoubleConversion:
@@ -481,8 +464,6 @@ EXTERNAL SOURCES:
     :podspec: "../node_modules/react-native/third-party-podspecs/Folly.podspec"
   glog:
     :podspec: "../node_modules/react-native/third-party-podspecs/glog.podspec"
-  HelloXCFramework_Yen:
-    :git: https://github.com/yen-igaw/HelloXCFramework.git
   lottie-react-native:
     :path: "../node_modules/lottie-react-native"
   RCTRequired:
@@ -505,10 +486,8 @@ EXTERNAL SOURCES:
     :path: "../node_modules/react-native/ReactCommon/jsiexecutor"
   React-jsinspector:
     :path: "../node_modules/react-native/ReactCommon/jsinspector"
-  react-native-appmetrica:
-    :path: "../node_modules/react-native-appmetrica"
-  react-native-appsflyer:
-    :path: "../node_modules/react-native-appsflyer"
+  react-native-adbrix-remaster-preview:
+    :path: "../node_modules/react-native-adbrix-remaster-preview"
   react-native-safe-area-context:
     :path: "../node_modules/react-native-safe-area-context"
   React-RCTActionSheet:
@@ -572,13 +551,8 @@ EXTERNAL SOURCES:
   Yoga:
     :path: "../node_modules/react-native/ReactCommon/yoga"
 
-CHECKOUT OPTIONS:
-  HelloXCFramework_Yen:
-    :commit: c4a134be44aa2398764a7943915e9a36d03d5fcb
-    :git: https://github.com/yen-igaw/HelloXCFramework.git
-
 SPEC CHECKSUMS:
-  AppsFlyerFramework: c66d79d965ccc2f44fd5db3df3d214428cc7665a
+  AdBrixRemastered_XC: 16c65616a5e8c30785dcdf2a5f1b2996df8b7ce7
   boost-for-react-native: 39c7adb57c4e60d6c5479dd8623128eb5b3f0f2c
   DoubleConversion: cde416483dac037923206447da6e1454df403714
   EXApplication: 4797b8b37f0b0470f587fdccf6407f44b50d18b5
@@ -603,7 +577,6 @@ SPEC CHECKSUMS:
   FBReactNativeSpec: f2c97f2529dd79c083355182cc158c9f98f4bd6e
   Folly: b73c3869541e86821df3c387eb0af5f65addfab4
   glog: 40a13f7840415b9a77023fbcae0f1e6f43192af3
-  HelloXCFramework_Yen: b37e8a1033a2daa50601bdd87ab8dabc56591c40
   lottie-ios: 3a3758ef5a008e762faec9c9d50a39842f26d124
   lottie-react-native: 69740f3742cc82d8211979e2b48681e002c22bff
   RCTRequired: 082f10cd3f905d6c124597fd1c14f6f2655ff65e
@@ -616,8 +589,7 @@ SPEC CHECKSUMS:
   React-jsi: a0418934cf48f25b485631deb27c64dc40fb4c31
   React-jsiexecutor: 93bd528844ad21dc07aab1c67cb10abae6df6949
   React-jsinspector: 58aef7155bc9a9683f5b60b35eccea8722a4f53a
-  react-native-appmetrica: 799bd81c1d9ba026705b54d7b7081c57b9348387
-  react-native-appsflyer: 0f31d34f73fb3a32f29ddece86b45a1e3af8251e
+  react-native-adbrix-remaster-preview: 81d1a5f5d731a23a36480ea119789ac004195b10
   react-native-safe-area-context: f0906bf8bc9835ac9a9d3f97e8bde2a997d8da79
   React-RCTActionSheet: 89a0ca9f4a06c1f93c26067af074ccdce0f40336
   React-RCTAnimation: 1bde3ecc0c104c55df246eda516e0deb03c4e49b
@@ -648,9 +620,8 @@ SPEC CHECKSUMS:
   UMReactNativeAdapter: 65ada852a648fcb6674acfbfe72ccb095f2f5b75
   UMSensorsInterface: a5e9db661e5d9ae214762033d725989880ae6993
   UMTaskManagerInterface: 203c11259d2699b5b3a4eda4adbc466f5cb5c561
-  YandexMobileMetrica: 1030df2959c886a7be3bc3d274eb54c8e86afd6f
   Yoga: 4bd86afe9883422a7c4028c00e34790f560923d6
 
-PODFILE CHECKSUM: 686821cac885a1f7c360b66eebec7adfa6ec8942
+PODFILE CHECKSUM: d4517fb614e4d0f605bd4e695231a59c421af466
 
 COCOAPODS: 1.10.1

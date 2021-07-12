@@ -12,7 +12,6 @@
 		13B07FBF1A68108700A75B9A /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 13B07FB51A68108700A75B9A /* Images.xcassets */; };
 		13B07FC11A68108700A75B9A /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 13B07FB71A68108700A75B9A /* main.m */; };
 		3E461D99554A48A4959DE609 /* SplashScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = AA286B85B6C04FC6940260E9 /* SplashScreen.storyboard */; };
-		4FABF86A26975C11006AA5B9 /* RNAdbrixRmReact.m in Sources */ = {isa = PBXBuildFile; fileRef = 4FABF86926975C11006AA5B9 /* RNAdbrixRmReact.m */; };
 		4FABF86C26975FE8006AA5B9 /* iAd.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 4FABF86B26975FE8006AA5B9 /* iAd.framework */; };
 		74AFD7B9E2904B2E84FC5BC3 /* noop-file.swift in Sources */ = {isa = PBXBuildFile; fileRef = 40B519E08A1B4E7CBDD33DCE /* noop-file.swift */; };
 		96905EF65AED1B983A6B3ABC /* libPods-DfineryEcommerceDemo.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 58EEBF8E8E6FB1BC6CAF49B5 /* libPods-DfineryEcommerceDemo.a */; };
@@ -29,8 +28,6 @@
 		13B07FB61A68108700A75B9A /* Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; name = Info.plist; path = DfineryEcommerceDemo/Info.plist; sourceTree = "<group>"; };
 		13B07FB71A68108700A75B9A /* main.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = main.m; path = DfineryEcommerceDemo/main.m; sourceTree = "<group>"; };
 		40B519E08A1B4E7CBDD33DCE /* noop-file.swift */ = {isa = PBXFileReference; explicitFileType = undefined; fileEncoding = 4; includeInIndex = 0; lastKnownFileType = sourcecode.swift; name = "noop-file.swift"; path = "DfineryEcommerceDemo/noop-file.swift"; sourceTree = "<group>"; };
-		4FABF86826975C11006AA5B9 /* RNAdbrixRmReact.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = RNAdbrixRmReact.h; sourceTree = "<group>"; };
-		4FABF86926975C11006AA5B9 /* RNAdbrixRmReact.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = RNAdbrixRmReact.m; sourceTree = "<group>"; };
 		4FABF86B26975FE8006AA5B9 /* iAd.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = iAd.framework; path = System/Library/Frameworks/iAd.framework; sourceTree = SDKROOT; };
 		58EEBF8E8E6FB1BC6CAF49B5 /* libPods-DfineryEcommerceDemo.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-DfineryEcommerceDemo.a"; sourceTree = BUILT_PRODUCTS_DIR; };
 		6C2E3173556A471DD304B334 /* Pods-DfineryEcommerceDemo.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-DfineryEcommerceDemo.debug.xcconfig"; path = "Target Support Files/Pods-DfineryEcommerceDemo/Pods-DfineryEcommerceDemo.debug.xcconfig"; sourceTree = "<group>"; };
@@ -61,8 +58,6 @@
 				BB2F792B24A3F905000567C9 /* Supporting */,
 				008F07F21AC5B25A0029DE68 /* main.jsbundle */,
 				13B07FAF1A68108700A75B9A /* AppDelegate.h */,
-				4FABF86826975C11006AA5B9 /* RNAdbrixRmReact.h */,
-				4FABF86926975C11006AA5B9 /* RNAdbrixRmReact.m */,
 				13B07FB01A68108700A75B9A /* AppDelegate.m */,
 				13B07FB51A68108700A75B9A /* Images.xcassets */,
 				13B07FB61A68108700A75B9A /* Info.plist */,
@@ -335,7 +330,6 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				4FABF86A26975C11006AA5B9 /* RNAdbrixRmReact.m in Sources */,
 				13B07FBC1A68108700A75B9A /* AppDelegate.m in Sources */,
 				13B07FC11A68108700A75B9A /* main.m in Sources */,
 				74AFD7B9E2904B2E84FC5BC3 /* noop-file.swift in Sources */,
