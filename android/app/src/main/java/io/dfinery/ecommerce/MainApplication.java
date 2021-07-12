@@ -3,6 +3,7 @@ package io.dfinery.ecommerce;
 import android.app.Application;
 import android.content.Context;
 import android.net.Uri;
+import android.os.Build;
 
 import com.facebook.react.PackageList;
 import com.facebook.react.ReactApplication;
@@ -24,6 +25,8 @@ import expo.modules.filesystem.FileSystemPackage;
 import expo.modules.updates.UpdatesController;
 
 import com.facebook.react.bridge.JSIModulePackage;
+import com.igaworks.v2.core.application.AbxActivityHelper;
+import com.igaworks.v2.core.application.AbxActivityLifecycleCallbacks;
 //import com.swmansion.reanimated.ReanimatedJSIModulePackage;
 
 import java.lang.reflect.InvocationTargetException;
@@ -93,6 +96,11 @@ public class MainApplication extends Application implements ReactApplication {
     }
 
     initializeFlipper(this, getReactNativeHost().getReactInstanceManager());
+
+    AbxActivityHelper.initializeSdk(MainApplication.this, "dW6eSX9fbk2r0Rr4KJIQ0A", "tkBFgB2bOUK0L0Jo9FKqyw");
+    if (Build.VERSION.SDK_INT >= 14) {
+      registerActivityLifecycleCallbacks(new AbxActivityLifecycleCallbacks());
+    }
   }
 
   /**

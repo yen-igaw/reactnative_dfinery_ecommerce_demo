@@ -23,9 +23,10 @@ import * as Font from "expo-font";
 import { reducer as formReducer } from "redux-form";
 import { StatusBar } from "expo-status-bar";
 //Notification
-import LocalNotication from "./src/components/Notification/LocalNotification";
+// import LocalNotication from "./src/components/Notification/LocalNotification";
 
 // Analytics
+import AdbrixRm from 'react-native-adbrix-remaster-preview';
 
 
 const rootReducer = combineReducers({
@@ -76,6 +77,10 @@ const LoadAssets = async () => {
   return await Promise.all([imageAssets, fetchFonts]);
 };
 export default function App() {
+
+  useEffect(() => {
+    AdbrixRm.initRNPlugin();
+  }, []);
 
   const [assetLoaded, setAssetLoaded] = useState(false);
   if (!assetLoaded) {

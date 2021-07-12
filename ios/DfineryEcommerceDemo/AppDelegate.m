@@ -5,6 +5,10 @@
 #import <React/RCTRootView.h>
 #import <React/RCTLinkingManager.h>
 
+#import <AdSupport/AdSupport.h>
+#import <AdBrixRM_XC/AdBrixRM_XC-Swift.h> // We use AdBrixRM_XC module name instead of AdBrixRM
+#import <AppTrackingTransparency/AppTrackingTransparency.h>
+
 #import <UMCore/UMModuleRegistry.h>
 #import <UMReactNativeAdapter/UMNativeModulesProxy.h>
 #import <UMReactNativeAdapter/UMModuleRegistryAdapter.h>
@@ -57,7 +61,31 @@ static void InitializeFlipper(UIApplication *application) {
   #endif
 
   [super application:application didFinishLaunchingWithOptions:launchOptions];
-
+  // Create AdBrixRM Instance, Only need with Adbrix RN Plugin V2
+  AdBrixRM *adBrix = [AdBrixRM sharedInstance];
+  [adBrix initAdBrixWithAppKey:@"dW6eSX9fbk2r0Rr4KJIQ0A" secretKey:@"tkBFgB2bOUK0L0Jo9FKqyw"];
+ 
+  if (@available(iOS 14, *)) {
+    [ATTrackingManager requestTrackingAuthorizationWithCompletionHandler:^(ATTrackingManagerAuthorizationStatus status) {
+      switch (status) {
+        case ATTrackingManagerAuthorizationStatusAuthorized:
+          [adBrix startGettingIDFA];
+          break;
+        case ATTrackingManagerAuthorizationStatusDenied:
+          [adBrix stopGettingIDFA];
+          break;
+        case ATTrackingManagerAuthorizationStatusRestricted:
+          [adBrix stopGettingIDFA];
+          break;
+        case ATTrackingManagerAuthorizationStatusNotDetermined:
+          [adBrix stopGettingIDFA];
+          break;
+        default:
+          [adBrix stopGettingIDFA];
+          break;
+      }
+    }];
+  }
   return YES;
 }
 
@@ -98,11 +126,20 @@ static void InitializeFlipper(UIApplication *application) {
 
 // Linking API
 - (BOOL)application:(UIApplication *)application openURL:(NSURL *)url options:(NSDictionary<UIApplicationOpenURLOptionsKey,id> *)options {
+      AdBrixRM *adBrix = [AdBrixRM sharedInstance];
+      [adBrix deepLinkOpenWithUrl:url]; // Deeplink tracking code
   return [RCTLinkingManager application:application openURL:url options:options];
 }
 
 // Universal Links
 - (BOOL)application:(UIApplication *)application continueUserActivity:(nonnull NSUserActivity *)userActivity restorationHandler:(nonnull void (^)(NSArray<id<UIUserActivityRestoring>> * _Nullable))restorationHandler {
+      if ([userActivity.activityType isEqualToString: NSUserActivityTypeBrowsingWeb]) {
+        NSURL *incomeingurl = userActivity.webpageURL;
+        NSLog(@"DEEPLINK :: UniversialLink was Clicked!! : %@", incomeingurl);
+        AdBrixRM *adBrix = [AdBrixRM sharedInstance];
+        [adBrix deepLinkOpenWithUrl:incomeingurl];
+        
+      }
   return [RCTLinkingManager application:application
                    continueUserActivity:userActivity
                      restorationHandler:restorationHandler];
