@@ -172,7 +172,7 @@ const Login = (props) => {
                 {auth.isLoading ? (
                   <ActivityIndicator size="small" color="#fff" />
                 ) : (
-                  <CustomText style={styles.textSign}>Đăng nhập</CustomText>
+                  <CustomText style={styles.textSign}>Login</CustomText>
                 )}
               </View>
             </TouchableOpacity>

@@ -56,7 +56,7 @@ export class CategorySection extends React.PureComponent {
           style={{ marginHorizontal: 10 }}
         >
           <BlurView tint="light" intensity={100} style={styles.seeMore}>
-            <CustomText style={styles.seeMoreText}>Xem Thêm</CustomText>
+            <CustomText style={styles.seeMoreText}>Show more</CustomText>
           </BlurView>
         </TouchableOpacity>
       </View>

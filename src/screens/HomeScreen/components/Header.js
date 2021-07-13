@@ -208,7 +208,7 @@ export class Header extends React.Component {
                 </Animated.View>
                 <TextInput
                   ref='input'
-                  placeholder='Tìm kiếm sản phẩm'
+                  placeholder='Search Products'
                   clearButtonMode='always'
                   value={this.state.keyword}
                   onChangeText={(value) => this.searchFilterFunction(value)}
@@ -235,8 +235,8 @@ export class Header extends React.Component {
                   style={styles.image_placeholder}
                 />
                 <Text style={styles.image_placeholder_text}>
-                  Nhập vào từ khóa{'\n'}
-                  để tìm kiếm :D
+                  Input produt name{'\n'}
+                  you are looking for
                 </Text>
               </View>
             ) : (

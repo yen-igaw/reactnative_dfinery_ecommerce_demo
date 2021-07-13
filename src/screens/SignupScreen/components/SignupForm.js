@@ -162,7 +162,7 @@ const Signup = (props) => {
                 {loading ? (
                   <ActivityIndicator size="small" color="#fff" />
                 ) : (
-                  <CustomText style={styles.textSign}>Đăng ký</CustomText>
+                  <CustomText style={styles.textSign}>Sign-up</CustomText>
                 )}
               </View>
             </TouchableOpacity>

@@ -216,21 +216,21 @@ export const TabScreen = () => {
         name='HomeTab'
         component={HomeStackScreen}
         options={{
-          tabBarLabel: 'Trang chủ',
+          tabBarLabel: 'Home',
         }}
       />
       <Tab.Screen
         name='Favorite'
         component={FavoriteStackScreen}
         options={() => ({
-          tabBarLabel: 'Yêu thích',
+          tabBarLabel: 'Favorite',
         })}
       />
       <Tab.Screen
         name='Cart'
         component={CartStackScreen}
         options={() => ({
-          tabBarLabel: 'Giỏ hàng',
+          tabBarLabel: 'Cart',
           tabBarBadge: carts.items.length === 0 ? null : carts.items.length,
         })}
       />
@@ -246,19 +246,19 @@ export const DrawerNavigator = () => {
     {
       name: 'HomeTab',
       screen: TabScreen,
-      label: 'Trang Chủ',
+      label: 'Home',
       icon: 'home-outline',
     },
     {
       name: 'Order',
       screen: OrderScreen,
-      label: 'Đơn Hàng',
+      label: 'Order List',
       icon: 'receipt',
     },
     {
       name: 'Contact',
       screen: ContactScreen,
-      label: 'Liên Hệ',
+      label: 'Contact Us',
       icon: 'contacts',
     },
   ];
@@ -314,7 +314,7 @@ export const DrawerNavigator = () => {
                   fontFamily: 'Roboto-Medium',
                 }}
               >
-                Đăng nhập
+                Login
               </CustomText>
             ),
             drawerIcon: ({ focused }) => (

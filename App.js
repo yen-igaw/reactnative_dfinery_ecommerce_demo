@@ -28,7 +28,6 @@ import { StatusBar } from "expo-status-bar";
 // Analytics
 import AdbrixRm from 'react-native-adbrix-remaster-preview';
 
-
 const rootReducer = combineReducers({
   store: productReducer,
   cart: cartReducer,

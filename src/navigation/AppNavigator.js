@@ -12,6 +12,7 @@ import { Host } from 'react-native-portalize';
 //Deep Link
 import { urlRedirect } from '../utils/Tools';
 import * as Linking from 'expo-linking';
+import AdbrixRm from 'react-native-adbrix-remaster-preview';
 
 LogBox.ignoreLogs(['Setting a timer', 'interpolate() was renamed', 'Warning: Cannot update a component from inside the function body']);
 
@@ -20,7 +21,13 @@ export const AppNavigator = () => {
   const dispatch = useDispatch();
   const isFirstOpen = useSelector((state) => state.store.isFirstOpen);
   useEffect(() => {
-    // listen for new url events coming from Expo
+    // Listen for deferred deeplink from adbrix
+    AdbrixRm.setDeferredDeeplinkListener(function (deferredDeeplink) {
+      console.log("deferredDeeplink msg arrived!");
+      console.log(deeplink); // you will receive DeferredDeeplink info on "deeplink"
+      urlRedirect(deferredDeeplink);
+    });
+    // listen for new url events coming from adbrix all-links, Expo
     Linking.addEventListener(
       'url',
       (event) => {

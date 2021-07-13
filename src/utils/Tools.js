@@ -29,12 +29,13 @@ export const OpenURL = ({ url, children }) => {
 export const urlRedirect = (url) => {
   if (!url) return;
   // parse and redirect to new url
+  console.log(`URL: ${url}`);
   let { path, queryParams } = Linking.parse(url);
-  // console.log(
-  //   `Linked to app with path: ${path} and data: ${JSON.stringify(
-  //     queryParams
-  //   )}`
-  // );
+  console.log(
+    `Linked to app with path: ${path} and data: ${JSON.stringify(
+      queryParams
+    )}`
+  );
   if (path) {
     RootNavigation.navigate(path, queryParams);
   }

@@ -105,7 +105,7 @@ export const ActionButton = ({
           {cartLoading ? (
             <ActivityIndicator size='small' color='#fff' />
           ) : (
-            <CustomText style={styles.actionText}>Thêm vào giỏ hàng</CustomText>
+            <CustomText style={styles.actionText}>Add to cart</CustomText>
           )}
         </TouchableOpacity>
       </View>
